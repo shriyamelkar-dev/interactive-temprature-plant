@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Paradise • Temp Converter</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="converter">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h1>Temprature Converter</h1>
+            
+            <form id="tempForm">
+                <label>Enter the temperature:</label><br><br>
+                <input type="number" id="tempnum" placeholder="e.g. 25" required><br><br>
+                
+                <div class="radio-group">
+                    <input type="radio" name="tempunit" value="Celsius" id="c">
+                    <label for="c">Celsius (°C)</label><br><br>
+                    
+                    <input type="radio" name="tempunit" value="Fahrenheit" id="f">
+                    <label for="f">Fahrenheit (°F)</label>
+                </div>
+                
+                <button type="submit">Convert Now ✨</button>
+            </form>
+
+            <div id="result" class="result"></div>
+        </div>
+
+        <!-- Visual Plant Section -->
+        <div class="visual-section">
+            <div id="plantBox" class="plant-container">
+                <div class="plant" id="plant">🪴</div>
+                <div class="soil"></div>
+                <div class="pot"></div>
+            </div>
+            <p id="plantStatus">Waiting for temperature...</p>
+        </div>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+</html>
