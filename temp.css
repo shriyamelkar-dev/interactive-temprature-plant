@@ -52,7 +52,7 @@ body::before {
   max-width: 840px;
   padding: 45px;
   border-radius: 32px;
-  background: rgba(111, 63, 180, 0.28);        /* Nice translucent purple */
+  background: rgba(111, 63, 180, 0.28);        
   box-shadow: 0 25px 70px rgba(47, 17, 75, 0.35);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(218, 193, 255, 0.2);
@@ -66,6 +66,7 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap:20px;
 }
 
 h1 {
